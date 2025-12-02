@@ -2,7 +2,7 @@
     "config": {
         "storeName": "Candid Craft",
         "whatsappPhone": "919876543210",
-        "currencySymbol": "\u00e2\u201a\u00b9"
+        "currencySymbol": "₹"
     },
     "categories": [
         {
@@ -14,16 +14,36 @@
                     "id": "f1",
                     "name": "Spotify Acrylic Frame",
                     "price": "1200",
-                    "image": "https://images.unsplash.com/photo-1612323647465-b6d77ce65e04?w=500&q=80",
-                    "description": "6x9 inch transparent acrylic frame with scannable Spotify code.",
+                    "image": "https://images.unsplash.com/photo-1614620245376-782255866170?w=600&q=80",
+                    "description": "6x9 inch transparent acrylic frame with scannable Spotify code and your photo.",
+                    "whatsappCode": "FRAME-SPOTIFY",
                     "featured": true
                 },
                 {
                     "id": "f2",
                     "name": "Vintage Sketch Frame",
                     "price": "1800",
-                    "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500&q=80",
-                    "description": "A4 wooden frame with handmade digital sketch effect.",
+                    "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&q=80",
+                    "description": "A4 wooden frame with a handmade digital pencil sketch effect.",
+                    "whatsappCode": "FRAME-SKETCH",
+                    "featured": false
+                },
+                {
+                    "id": "f3",
+                    "name": "Baby Birth Stats Frame",
+                    "price": "1500",
+                    "image": "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&q=80",
+                    "description": "Custom frame with baby's name, birth date, time, and weight. Perfect nursery decor.",
+                    "whatsappCode": "FRAME-BABY",
+                    "featured": false
+                },
+                {
+                    "id": "f4",
+                    "name": "Mosaic Photo Frame",
+                    "price": "2200",
+                    "image": "https://images.unsplash.com/photo-1544376798-89aa6b82c6cd?w=600&q=80",
+                    "description": "A big picture made of hundreds of smaller mini-photos. Size 12x18 inches.",
+                    "whatsappCode": "FRAME-MOSAIC",
                     "featured": false
                 }
             ]
@@ -37,16 +57,36 @@
                     "id": "h1",
                     "name": "Luxury Chocolate Hamper",
                     "price": "2500",
-                    "image": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=500&q=80",
-                    "description": "Assorted imported chocolates, scented candle, and greeting card.",
+                    "image": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=600&q=80",
+                    "description": "Premium basket with Ferrero Rocher, Lindt, scented candle, and a greeting card.",
+                    "whatsappCode": "HAMPER-CHOC",
                     "featured": true
                 },
                 {
                     "id": "h2",
                     "name": "Explosion Box",
                     "price": "999",
-                    "image": "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?w=500&q=80",
-                    "description": "3-layer explosion box holding 20+ photos.",
+                    "image": "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?w=600&q=80",
+                    "description": "3-layer explosion box holding 20+ photos. Unfolds to reveal sweet messages.",
+                    "whatsappCode": "HAMPER-BOX",
+                    "featured": true
+                },
+                {
+                    "id": "h3",
+                    "name": "Men's Classic Combo",
+                    "price": "1850",
+                    "image": "https://images.unsplash.com/photo-1607457757946-b60b4cb42767?w=600&q=80",
+                    "description": "Includes a personalized leather wallet, keychain, and eyewear case with name engraving.",
+                    "whatsappCode": "HAMPER-MENS",
+                    "featured": false
+                },
+                {
+                    "id": "h4",
+                    "name": "Self-Care Spa Kit",
+                    "price": "3000",
+                    "image": "https://images.unsplash.com/photo-1608248597279-f99d160bfbc8?w=600&q=80",
+                    "description": "Relaxing kit with bath salts, organic soaps, face masks, and a silk eye mask.",
+                    "whatsappCode": "HAMPER-SPA",
                     "featured": false
                 }
             ]
@@ -58,19 +98,30 @@
             "products": [
                 {
                     "id": "r1",
-                    "name": "Floral Resin Letters",
-                    "price": "450",
-                    "image": "https://images.unsplash.com/photo-1615457938971-6334547225c5?w=500&q=80",
-                    "description": "Real preserved flowers inside crystal clear resin.",
+                    "name": "Ocean Resin Clock",
+                    "price": "3200",
+                    "image": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=600&q=80",
+                    "description": "12-inch round wall clock made with real sand and multi-layer resin ocean waves.",
+                    "whatsappCode": "RESIN-CLOCK",
                     "featured": true
                 },
                 {
                     "id": "r2",
-                    "name": "Ocean Resin Clock",
-                    "price": "3200",
-                    "image": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=500&q=80",
-                    "description": "12-inch round wall clock with real sand and ocean wave effect.",
-                    "featured": true
+                    "name": "Floral Alphabet Keychain",
+                    "price": "450",
+                    "image": "https://images.unsplash.com/photo-1615457938971-6334547225c5?w=600&q=80",
+                    "description": "Your initial letter preserved with real dried flowers and gold flakes.",
+                    "whatsappCode": "RESIN-KEYCHAIN",
+                    "featured": false
+                },
+                {
+                    "id": "r3",
+                    "name": "Geode Coaster Set (4pcs)",
+                    "price": "1200",
+                    "image": "https://images.unsplash.com/photo-1615457938996-b3335759fa7d?w=600&q=80",
+                    "description": "Luxury agate-style resin coasters with gold edges. Heat resistant.",
+                    "whatsappCode": "RESIN-COASTERS",
+                    "featured": false
                 }
             ]
         },
@@ -83,26 +134,59 @@
                     "id": "d1",
                     "name": "Nikkah Nama Contract",
                     "price": "3500",
-                    "image": "https://images.unsplash.com/photo-1529636798458-92189330750c?w=500&q=80",
-                    "description": "Hand-painted Islamic marriage contract with gold leaf detailing.",
+                    "image": "https://images.unsplash.com/photo-1529636798458-92189330750c?w=600&q=80",
+                    "description": "Hand-painted Islamic marriage contract with gold leaf detailing and floral borders.",
+                    "whatsappCode": "DECOR-NIKKAH",
+                    "featured": false
+                },
+                {
+                    "id": "d2",
+                    "name": "Wedding Welcome Board",
+                    "price": "2500",
+                    "image": "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=600&q=80",
+                    "description": "Acrylic welcome sign for weddings/engagements with 3D text.",
+                    "whatsappCode": "DECOR-BOARD",
                     "featured": false
                 }
             ]
         },
         {
             "id": "digital",
-            "name": "Digital Videos",
+            "name": "Digital",
             "icon": "fa-video",
             "products": [
                 {
                     "id": "v1",
                     "name": "Wedding Invite Video",
                     "price": "1500",
-                    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500&q=80",
-                    "description": "60-second animated save-the-date video.",
+                    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&q=80",
+                    "description": "60-second animated save-the-date video. HD quality with background music.",
+                    "whatsappCode": "DIGITAL-INVITE",
                     "featured": false
                 }
             ]
+        }
+    ],
+    "portfolio": [
+        {
+            "id": "p1",
+            "title": "Ocean Clock Commission",
+            "image": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=600&q=80"
+        },
+        {
+            "id": "p2",
+            "title": "Anniversary Hamper",
+            "image": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=600&q=80"
+        },
+        {
+            "id": "p3",
+            "title": "Floral Preservation",
+            "image": "https://images.unsplash.com/photo-1615457938971-6334547225c5?w=600&q=80"
+        },
+        {
+            "id": "p4",
+            "title": "Custom Sketch",
+            "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&q=80"
         }
     ]
 }
