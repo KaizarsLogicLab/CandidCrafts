@@ -1,0 +1,108 @@
+{
+    "config": {
+        "storeName": "Candid Craft",
+        "whatsappPhone": "919876543210",
+        "currencySymbol": "\u00e2\u201a\u00b9"
+    },
+    "categories": [
+        {
+            "id": "frames",
+            "name": "Frames",
+            "icon": "fa-image",
+            "products": [
+                {
+                    "id": "f1",
+                    "name": "Spotify Acrylic Frame",
+                    "price": "1200",
+                    "image": "https://images.unsplash.com/photo-1612323647465-b6d77ce65e04?w=500&q=80",
+                    "description": "6x9 inch transparent acrylic frame with scannable Spotify code.",
+                    "featured": true
+                },
+                {
+                    "id": "f2",
+                    "name": "Vintage Sketch Frame",
+                    "price": "1800",
+                    "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500&q=80",
+                    "description": "A4 wooden frame with handmade digital sketch effect.",
+                    "featured": false
+                }
+            ]
+        },
+        {
+            "id": "hampers",
+            "name": "Hampers",
+            "icon": "fa-gift",
+            "products": [
+                {
+                    "id": "h1",
+                    "name": "Luxury Chocolate Hamper",
+                    "price": "2500",
+                    "image": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=500&q=80",
+                    "description": "Assorted imported chocolates, scented candle, and greeting card.",
+                    "featured": true
+                },
+                {
+                    "id": "h2",
+                    "name": "Explosion Box",
+                    "price": "999",
+                    "image": "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?w=500&q=80",
+                    "description": "3-layer explosion box holding 20+ photos.",
+                    "featured": false
+                }
+            ]
+        },
+        {
+            "id": "resin",
+            "name": "Resin Art",
+            "icon": "fa-wand-magic-sparkles",
+            "products": [
+                {
+                    "id": "r1",
+                    "name": "Floral Resin Letters",
+                    "price": "450",
+                    "image": "https://images.unsplash.com/photo-1615457938971-6334547225c5?w=500&q=80",
+                    "description": "Real preserved flowers inside crystal clear resin.",
+                    "featured": true
+                },
+                {
+                    "id": "r2",
+                    "name": "Ocean Resin Clock",
+                    "price": "3200",
+                    "image": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=500&q=80",
+                    "description": "12-inch round wall clock with real sand and ocean wave effect.",
+                    "featured": true
+                }
+            ]
+        },
+        {
+            "id": "decor",
+            "name": "Event Decor",
+            "icon": "fa-cake-candles",
+            "products": [
+                {
+                    "id": "d1",
+                    "name": "Nikkah Nama Contract",
+                    "price": "3500",
+                    "image": "https://images.unsplash.com/photo-1529636798458-92189330750c?w=500&q=80",
+                    "description": "Hand-painted Islamic marriage contract with gold leaf detailing.",
+                    "featured": false
+                }
+            ]
+        },
+        {
+            "id": "digital",
+            "name": "Digital Videos",
+            "icon": "fa-video",
+            "products": [
+                {
+                    "id": "v1",
+                    "name": "Wedding Invite Video",
+                    "price": "1500",
+                    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500&q=80",
+                    "description": "60-second animated save-the-date video.",
+                    "featured": false
+                }
+            ]
+        }
+    ]
+}

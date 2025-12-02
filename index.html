@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candid Craft | Handmade Gifts & Decor</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cc-pink-light': '#FFF0F5', 'cc-pink-med': '#FFD1DC', 'cc-pink-dark': '#D48C9E', 'cc-gold': '#C5A059', 'cc-text': '#4A4A4A',
+                    },
+                    fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'], 'sans': ['"Quicksand"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Quicksand', sans-serif; background-color: #FFF0F5; color: #4A4A4A; -webkit-tap-highlight-color: transparent; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .modal { transition: opacity 0.3s ease, visibility 0.3s ease; }
+        .modal.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+        .clickable { cursor: pointer; }
+    </style>
+</head>
+<body class="antialiased pb-24 md:pb-0">
+
+    <!-- DATA SOURCE NOTIFICATION -->
+    <div id="demo-banner" class="hidden fixed top-0 left-0 w-full bg-yellow-100 text-yellow-800 text-center text-xs font-bold py-1 z-[60] border-b border-yellow-200">
+        ⚠️ Running in Local/Demo Mode. To see live `products.json` updates, use a Local Server.
+    </div>
+
+    <!-- NAV -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-cc-pink-med/30 mt-0 transition-all" id="main-nav">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <button id="mobile-menu-btn" class="md:hidden text-cc-text text-xl p-2"><i class="fa-solid fa-bars"></i></button>
+            <div class="flex items-center gap-2 clickable" onclick="navigate('home')">
+                <div class="bg-cc-pink-dark text-white w-8 h-8 rounded-full flex items-center justify-center font-serif italic font-bold text-lg">C</div>
+                <span class="font-serif font-bold text-xl tracking-wide text-cc-text">Candid Craft</span>
+            </div>
+            <div class="hidden md:flex gap-6 font-medium text-sm uppercase tracking-wider text-cc-text/80">
+                <a onclick="navigate('home')" class="hover:text-cc-pink-dark transition cursor-pointer">Home</a>
+                <a onclick="navigate('catalog')" class="hover:text-cc-pink-dark transition cursor-pointer">Shop</a>
+                <a onclick="navigate('gallery')" class="hover:text-cc-pink-dark transition cursor-pointer">Gallery</a>
+                <a onclick="navigate('about')" class="hover:text-cc-pink-dark transition cursor-pointer">About</a>
+                <a onclick="navigate('contact')" class="hover:text-cc-pink-dark transition cursor-pointer">Contact</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a id="nav-wa-btn" href="#" target="_blank" class="hidden md:block bg-green-500 hover:bg-green-600 text-white px-4 py-1.5 rounded-full text-sm font-semibold transition shadow-md"><i class="fa-brands fa-whatsapp mr-1"></i> Chat</a>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-100 flex flex-col p-4 gap-4 md:hidden">
+            <a onclick="navigate('home'); toggleMobileMenu()" class="text-lg font-medium">Home</a>
+            <a onclick="navigate('catalog'); toggleMobileMenu()" class="text-lg font-medium">Shop</a>
+            <a onclick="navigate('gallery'); toggleMobileMenu()" class="text-lg font-medium">Portfolio</a>
+            <a onclick="navigate('contact'); toggleMobileMenu()" class="text-lg font-medium">Contact</a>
+        </div>
+    </nav>
+
+    <!-- MAIN APP -->
+    <main id="app" class="pt-20 min-h-screen">
+        
+        <!-- LOADING -->
+        <div id="loading-screen" class="fixed inset-0 bg-white z-[100] flex items-center justify-center flex-col">
+            <div class="w-10 h-10 border-4 border-cc-pink-med border-t-cc-pink-dark rounded-full animate-spin mb-4"></div>
+            <p class="text-cc-pink-dark font-medium animate-pulse">Loading Store...</p>
+        </div>
+
+        <!-- VIEW: HOME -->
+        <section id="view-home" class="view-section hidden">
+            <div class="container mx-auto px-4 mb-10">
+                <div class="bg-gradient-to-r from-cc-pink-med to-white rounded-3xl p-8 md:p-12 relative overflow-hidden shadow-lg">
+                    <div class="relative z-10 max-w-lg">
+                        <span class="bg-white/60 text-cc-pink-dark px-3 py-1 rounded-full text-xs font-bold uppercase mb-4 inline-block">Handmade with Love</span>
+                        <h1 class="text-4xl md:text-5xl font-bold text-cc-text mb-4 leading-tight">Turn Moments into <span class="text-cc-pink-dark italic">Masterpieces</span></h1>
+                        <button onclick="navigate('catalog')" class="bg-cc-pink-dark text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:-translate-y-1 transition">Explore Collection</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container mx-auto pl-4 mb-12">
+                <h2 class="text-2xl font-bold text-cc-text mb-4">Categories</h2>
+                <!-- Category Container (Event Delegation) -->
+                <div class="flex gap-4 overflow-x-auto no-scrollbar pb-4 pr-4" id="home-categories"></div>
+            </div>
+            
+            <div class="container mx-auto px-4 pb-20">
+                <h2 class="text-2xl font-bold text-cc-text mb-6">Trending Now</h2>
+                <!-- Featured Container (Event Delegation) -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="home-featured"></div>
+            </div>
+        </section>
+
+        <!-- VIEW: CATALOG -->
+        <section id="view-catalog" class="view-section hidden">
+            <div class="container mx-auto px-4 pb-24">
+                <div class="text-center py-8">
+                    <h1 class="text-3xl font-bold mb-2 font-serif">Our Collection</h1>
+                </div>
+                <!-- Filter Buttons Container (Event Delegation) -->
+                <div class="flex flex-wrap justify-center gap-2 mb-8" id="catalog-filters"></div>
+                <!-- Product Grid Container (Event Delegation) -->
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6" id="catalog-grid"></div>
+                <div id="no-results" class="hidden text-center py-20"><p class="text-lg text-cc-text/60">No items found.</p></div>
+            </div>
+        </section>
+
+        <!-- VIEW: GALLERY -->
+        <section id="view-gallery" class="view-section hidden">
+            <div class="container mx-auto px-4 pb-24">
+                <div class="text-center py-10">
+                    <h1 class="text-4xl font-serif font-bold mb-4">The Portfolio</h1>
+                    <p class="text-gray-500">Recent customer orders.</p>
+                </div>
+                <!-- Gallery Grid (Dynamically Populated) -->
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4" id="gallery-grid">
+                     <!-- Javascript will inject here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: CONTACT -->
+        <section id="view-contact" class="view-section hidden">
+            <div class="container mx-auto px-4 pb-20 pt-10">
+                <div class="text-center mb-12">
+                    <span class="text-cc-pink-dark font-bold uppercase tracking-widest text-xs">Get in Touch</span>
+                    <h1 class="text-4xl font-serif font-bold mt-2 mb-6 text-cc-text">Let's Create Something Special</h1>
+                    <p class="text-gray-600 max-w-xl mx-auto">Have a custom idea in mind? Need help with an order? We'd love to hear from you!</p>
+                </div>
+
+                <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-6 mb-12">
+                    <!-- WhatsApp Card -->
+                    <a href="#" id="contact-wa-card" target="_blank" class="bg-white p-8 rounded-3xl shadow-sm border border-green-50 hover:shadow-md hover:border-green-200 transition text-center group">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 text-green-500 text-2xl group-hover:scale-110 transition">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">WhatsApp Us</h3>
+                        <p class="text-sm text-gray-500 mb-4">Fastest response for custom orders.</p>
+                        <span class="text-green-600 font-bold text-sm">Chat Now &rarr;</span>
+                    </a>
+
+                    <!-- Instagram Card -->
+                    <a href="https://instagram.com" target="_blank" class="bg-white p-8 rounded-3xl shadow-sm border border-pink-50 hover:shadow-md hover:border-pink-200 transition text-center group">
+                        <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4 text-pink-500 text-2xl group-hover:scale-110 transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Follow Us</h3>
+                        <p class="text-sm text-gray-500 mb-4">See behind the scenes & latest work.</p>
+                        <span class="text-pink-600 font-bold text-sm">@CandidCraft &rarr;</span>
+                    </a>
+
+                    <!-- Email Card -->
+                    <a href="mailto:hello@candidcraft.com" class="bg-white p-8 rounded-3xl shadow-sm border border-blue-50 hover:shadow-md hover:border-blue-200 transition text-center group">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-500 text-2xl group-hover:scale-110 transition">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Email Us</h3>
+                        <p class="text-sm text-gray-500 mb-4">For bulk orders & collaborations.</p>
+                        <span class="text-blue-600 font-bold text-sm">Send Email &rarr;</span>
+                    </a>
+                </div>
+
+                <div class="bg-cc-pink-light/30 rounded-3xl p-8 text-center max-w-2xl mx-auto">
+                    <h4 class="font-bold text-cc-text mb-2">Frequently Asked Questions</h4>
+                    <p class="text-sm text-gray-500">Need to know about shipping times or customization limits?</p>
+                    <button onclick="alert('Detailed FAQ page coming soon!')" class="mt-4 text-cc-pink-dark font-bold text-sm hover:underline">Read FAQs</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- VIEW: ABOUT -->
+        <section id="view-about" class="view-section hidden">
+            <div class="container mx-auto px-4 pb-24 pt-10">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-12">
+                        <span class="text-cc-pink-dark font-bold uppercase tracking-widest text-xs">Our Story</span>
+                        <h1 class="text-4xl font-serif font-bold mt-2 mb-6 text-cc-text">Crafting with Heart & Soul</h1>
+                        <p class="text-gray-600 text-lg max-w-2xl mx-auto">Welcome to Candid Craft, where every piece tells a story. We turn your cherished memories into tangible, handcrafted art.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                        <div class="rounded-3xl overflow-hidden shadow-lg h-80 relative group">
+                            <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?w=800&q=80" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Crafting process">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 text-white">
+                                <h3 class="font-bold text-xl">Handmade Perfection</h3>
+                                <p class="text-sm opacity-90">Attention to every detail</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-serif font-bold mb-4 text-cc-text">Why Choose Us?</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                We believe gifts should be personal. In a world of mass-produced items, we take the time to handcraft something unique just for you. Whether it's a resin masterpiece or a sentimental frame, we pour our heart into every creation.
+                            </p>
+                            <ul class="space-y-4">
+                                <li class="flex items-center gap-3">
+                                    <span class="w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center text-cc-pink-dark"><i class="fa-solid fa-heart"></i></span>
+                                    <span class="text-gray-700 font-medium">100% Handmade & Customizable</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center text-cc-pink-dark"><i class="fa-solid fa-star"></i></span>
+                                    <span class="text-gray-700 font-medium">Premium Quality Materials</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center text-cc-pink-dark"><i class="fa-solid fa-truck-fast"></i></span>
+                                    <span class="text-gray-700 font-medium">Secure Packaging & Delivery</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PRODUCT MODAL -->
+    <div id="product-modal" class="modal hidden fixed inset-0 z-[60] flex items-end md:items-center justify-center">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm clickable" onclick="closeModal()"></div>
+        <div class="modal-content bg-white w-full md:w-[800px] rounded-t-3xl md:rounded-2xl shadow-2xl overflow-y-auto relative h-[85vh] md:h-auto flex flex-col md:flex-row">
+            <button onclick="closeModal()" class="absolute top-4 right-4 z-10 bg-white/80 p-2 rounded-full shadow-md hover:bg-gray-100"><i class="fa-solid fa-xmark"></i></button>
+            <div class="w-full md:w-1/2 bg-gray-100 h-64 md:h-auto"><img id="modal-img" src="" class="w-full h-full object-cover"></div>
+            <div class="w-full md:w-1/2 p-6 flex flex-col h-full">
+                <h2 id="modal-title" class="text-2xl font-bold font-serif mb-2"></h2>
+                <p id="modal-price" class="text-xl text-cc-pink-dark font-bold mb-4"></p>
+                <p id="modal-desc" class="text-gray-600 text-sm mb-6"></p>
+                <div class="space-y-3 border-t pt-4 mt-auto">
+                    <input type="text" id="cust-name" placeholder="Your Name" class="w-full border rounded-lg px-4 py-2 text-sm">
+                    <textarea id="cust-details" rows="2" placeholder="Customization details..." class="w-full border rounded-lg px-4 py-2 text-sm"></textarea>
+                    <button onclick="sendWhatsAppOrder()" class="w-full bg-green-500 text-white font-bold py-3.5 rounded-xl shadow-lg flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Order Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTTOM NAV -->
+    <div class="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-gray-100 shadow-[0_-5px_10px_rgba(0,0,0,0.02)] z-50 flex justify-around py-2">
+        <button onclick="navigate('home')" class="nav-btn w-1/5 flex flex-col items-center gap-1 p-2 text-gray-400"><i class="fa-solid fa-house"></i><span class="text-[10px]">Home</span></button>
+        <button onclick="navigate('catalog')" class="nav-btn w-1/5 flex flex-col items-center gap-1 p-2 text-gray-400"><i class="fa-solid fa-bag-shopping"></i><span class="text-[10px]">Shop</span></button>
+        <button onclick="navigate('gallery')" class="nav-btn w-1/5 flex flex-col items-center gap-1 p-2 text-gray-400"><i class="fa-solid fa-images"></i><span class="text-[10px]">Work</span></button>
+        <button onclick="navigate('contact')" class="nav-btn w-1/5 flex flex-col items-center gap-1 p-2 text-gray-400"><i class="fa-solid fa-user"></i><span class="text-[10px]">Contact</span></button>
+    </div>
+
+    <script>
+        // --- FALLBACK DATA (Used if products.json is blocked) ---
+        const FALLBACK_DATA = {
+            "config": { "storeName": "Candid Craft", "whatsappPhone": "919876543210", "currencySymbol": "₹" },
+            "categories": [
+                { "id": "frames", "name": "Frames", "icon": "fa-image", "products": [
+                    { "id": "f1", "name": "Spotify Acrylic Frame", "price": "1200", "image": "https://images.unsplash.com/photo-1612323647465-b6d77ce65e04?w=500", "featured": true }
+                ]},
+                { "id": "hampers", "name": "Hampers", "icon": "fa-gift", "products": [
+                     { "id": "h1", "name": "Luxury Chocolate Hamper", "price": "2500", "image": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=500", "featured": true }
+                ]},
+                { "id": "resin", "name": "Resin Art", "icon": "fa-wand-magic-sparkles", "products": [
+                     { "id": "r1", "name": "Resin Wall Clock", "price": "3200", "image": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=500", "featured": false }
+                ]}
+            ],
+            // Added Fallback Portfolio
+            "portfolio": [
+                 { "title": "Explosion Box", "image": "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?w=600&q=80" },
+                 { "title": "Resin Art", "image": "https://images.unsplash.com/photo-1615457938971-6334547225c5?w=600&q=80" }
+            ]
+        };
+
+        let APP_DATA = { categories: [], products: [], portfolio: [] };
+        let CONFIG = {};
+
+        // --- INIT & DATA LOADING ---
+        window.onload = async () => {
+            try {
+                // Try fetching remote/local file
+                const response = await fetch(`products.json?v=${Date.now()}`);
+                if (!response.ok) throw new Error("Load failed");
+                const json = await response.json();
+                initializeData(json);
+            } catch (error) {
+                console.warn("Using Fallback Data due to:", error);
+                // If fetch fails (CORS or file missing), use fallback
+                initializeData(FALLBACK_DATA);
+                document.getElementById('demo-banner').classList.remove('hidden');
+                document.getElementById('main-nav').classList.add('mt-6'); // Push nav down
+            }
+        };
+
+        function initializeData(json) {
+            CONFIG = json.config || json.settings;
+            // Fix currency encoding
+            if (CONFIG.currencySymbol && CONFIG.currencySymbol.includes('â')) CONFIG.currencySymbol = '₹';
+
+            APP_DATA.categories = json.categories || [];
+            APP_DATA.products = json.categories ? json.categories.flatMap(cat => 
+                cat.products.map(prod => ({...prod, categoryId: cat.id, categoryName: cat.name}))
+            ) : [];
+            APP_DATA.portfolio = json.portfolio || FALLBACK_DATA.portfolio;
+
+            // Update UI
+            document.title = CONFIG.storeName;
+            const waUrl = `https://wa.me/${CONFIG.whatsappPhone}`;
+            document.getElementById('nav-wa-btn').href = waUrl;
+            document.getElementById('contact-wa-card').href = waUrl;
+
+            renderUI();
+            document.getElementById('loading-screen').classList.add('hidden');
+            navigate('home');
+        }
+
+        // --- RENDERING ---
+        function renderUI() {
+            // Render Categories (Home)
+            const catContainer = document.getElementById('home-categories');
+            catContainer.innerHTML = APP_DATA.categories.map(cat => `
+                <div class="cat-pill flex-shrink-0 flex flex-col items-center gap-2 cursor-pointer group w-20" data-id="${cat.id}">
+                    <div class="w-16 h-16 rounded-full bg-white border border-cc-pink-med flex items-center justify-center text-cc-text shadow-sm group-hover:bg-cc-pink-dark group-hover:text-white transition transform group-hover:scale-105 pointer-events-none">
+                        <i class="fa-solid ${cat.icon} text-xl pointer-events-none"></i>
+                    </div>
+                    <span class="text-xs font-semibold text-cc-text pointer-events-none">${cat.name}</span>
+                </div>
+            `).join('');
+
+            // Render Featured (Home)
+            const featured = APP_DATA.products.filter(p => p.featured).slice(0, 4);
+            document.getElementById('home-featured').innerHTML = featured.map(p => createCardHTML(p)).join('');
+
+            // Render Filters (Shop)
+            const filterContainer = document.getElementById('catalog-filters');
+            let filterHtml = `<button data-filter="all" class="filter-btn bg-cc-pink-dark text-white px-4 py-1.5 rounded-full text-sm font-medium transition shadow-sm">All</button>`;
+            filterHtml += APP_DATA.categories.map(cat => `<button data-filter="${cat.id}" class="filter-btn bg-white text-gray-600 px-4 py-1.5 rounded-full text-sm font-medium transition shadow-sm hover:border-cc-pink-dark border border-transparent">${cat.name}</button>`).join('');
+            filterContainer.innerHTML = filterHtml;
+            
+            // Render Portfolio Grid
+            const galleryGrid = document.getElementById('gallery-grid');
+            galleryGrid.innerHTML = APP_DATA.portfolio.map(item => `
+                <div class="rounded-2xl overflow-hidden shadow-sm relative group h-48 md:h-64">
+                    <img src="${item.image}" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.src='https://placehold.co/600x400?text=Portfolio'">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <span class="text-white font-bold font-serif text-lg">${item.title}</span>
+                    </div>
+                </div>
+            `).join('');
+
+            // Render Initial Catalog
+            filterCatalog('all');
+        }
+
+        function createCardHTML(p) {
+            const currency = CONFIG.currencySymbol || '₹';
+            return `
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-lg transition overflow-hidden cursor-pointer group relative border border-gray-50" data-id="${p.id}">
+                    <div class="aspect-[4/5] bg-gray-100 relative overflow-hidden pointer-events-none">
+                        <img src="${p.image}" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 pointer-events-none" onerror="this.src='https://placehold.co/400x500?text=No+Image'">
+                        ${p.featured ? '<span class="absolute top-2 left-2 bg-cc-gold text-white text-[10px] font-bold px-2 py-1 rounded">BESTSELLER</span>' : ''}
+                        <div class="absolute bottom-3 right-3 bg-white text-cc-pink-dark w-10 h-10 rounded-full shadow-md flex items-center justify-center translate-y-12 group-hover:translate-y-0 transition duration-300">
+                            <i class="fa-solid fa-plus text-lg"></i>
+                        </div>
+                    </div>
+                    <div class="p-4 pointer-events-none">
+                        <div class="text-[10px] text-gray-400 uppercase font-bold mb-1 tracking-wider">${p.categoryName}</div>
+                        <h3 class="font-bold text-gray-800 text-sm truncate mb-1">${p.name}</h3>
+                        <div class="text-cc-pink-dark font-bold text-base">${currency}${p.price}</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // --- EVENT DELEGATION HANDLERS (The Fix for Broken Buttons) ---
+
+        // 1. Home Category Pills
+        document.getElementById('home-categories').addEventListener('click', (e) => {
+            const pill = e.target.closest('.cat-pill');
+            if(pill) {
+                const catId = pill.dataset.id;
+                filterCatalog(catId);
+                navigate('catalog');
+            }
+        });
+
+        // 2. Shop Filters
+        document.getElementById('catalog-filters').addEventListener('click', (e) => {
+            const btn = e.target.closest('.filter-btn');
+            if(btn) {
+                // Update Active UI
+                document.querySelectorAll('.filter-btn').forEach(b => {
+                    b.classList.remove('bg-cc-pink-dark', 'text-white');
+                    b.classList.add('bg-white', 'text-gray-600');
+                });
+                btn.classList.remove('bg-white', 'text-gray-600');
+                btn.classList.add('bg-cc-pink-dark', 'text-white');
+                
+                filterCatalog(btn.dataset.filter);
+            }
+        });
+
+        // 3. Product Cards (Delegated for both Home & Shop grids)
+        ['home-featured', 'catalog-grid'].forEach(gridId => {
+            document.getElementById(gridId).addEventListener('click', (e) => {
+                const card = e.target.closest('.product-card');
+                if(card) {
+                    e.stopPropagation(); // Stop bubbling
+                    openProduct(card.dataset.id);
+                }
+            });
+        });
+
+        // --- CORE FUNCTIONS ---
+
+        function filterCatalog(filter) {
+            const list = filter === 'all' ? APP_DATA.products : APP_DATA.products.filter(p => p.categoryId === filter);
+            const grid = document.getElementById('catalog-grid');
+            
+            grid.innerHTML = list.length ? list.map(p => createCardHTML(p)).join('') : '';
+            document.getElementById('no-results').classList.toggle('hidden', list.length > 0);
+
+            // Animate
+            if(list.length) gsap.from("#catalog-grid > div", { opacity: 0, y: 20, stagger: 0.05, duration: 0.4 });
+        }
+
+        let currentProduct = null;
+        function openProduct(id) {
+            // Loose comparison for string vs number ID
+            currentProduct = APP_DATA.products.find(p => p.id == id); 
+            if(!currentProduct) return;
+
+            const currency = CONFIG.currencySymbol || '₹';
+            document.getElementById('modal-img').src = currentProduct.image;
+            document.getElementById('modal-title').innerText = currentProduct.name;
+            document.getElementById('modal-price').innerText = currency + currentProduct.price;
+            document.getElementById('modal-desc').innerText = currentProduct.description || "No description available.";
+            
+            // Show modal
+            document.getElementById('product-modal').classList.remove('hidden');
+        }
+
+        function closeModal() { document.getElementById('product-modal').classList.add('hidden'); }
+
+        function navigate(viewId) {
+            document.querySelectorAll('.view-section').forEach(el => el.classList.add('hidden'));
+            const view = document.getElementById(`view-${viewId}`);
+            if(view) {
+                view.classList.remove('hidden');
+                gsap.fromTo(view, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.4, clearProps: "all" });
+                window.scrollTo(0,0);
+            }
+            
+            // Update Bottom Nav
+            document.querySelectorAll('.nav-btn').forEach(b => b.classList.replace('text-cc-pink-dark', 'text-gray-400'));
+            // (Simple nav highlight logic omitted for brevity, but view switching works)
+        }
+
+        function toggleMobileMenu() { document.getElementById('mobile-menu').classList.toggle('hidden'); }
+        document.getElementById('mobile-menu-btn').addEventListener('click', toggleMobileMenu);
+
+        function sendWhatsAppOrder() {
+            if(!currentProduct) return;
+            const name = document.getElementById('cust-name').value;
+            const details = document.getElementById('cust-details').value;
+            if(!name) return alert("Please enter your name");
+            const msg = `Hi! I want to order: ${currentProduct.name} (${CONFIG.currencySymbol}${currentProduct.price}). Name: ${name}. Details: ${details}`;
+            window.open(`https://wa.me/${CONFIG.whatsappPhone}?text=${encodeURIComponent(msg)}`, '_blank');
+        }
+    </script>
+</body>
+</html>
