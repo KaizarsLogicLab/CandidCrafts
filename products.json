@@ -16,7 +16,7 @@
                     "price": "450",
                     "description": "Elegant vintage-style frame for timeless memories.",
                     "whatsappCode": "FRAME-VINTAGE",
-                    "image": "https://images.unsplash.com/photo-1531844251246-9f10d93c6c10?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.31.44 PM.jpeg",
                     "featured": false
                 },
                 {
@@ -25,7 +25,7 @@
                     "price": "300",
                     "description": "Classic photo frame suitable for any decor.",
                     "whatsappCode": "FRAME-PHOTO",
-                    "image": "https://images.unsplash.com/photo-1544376798-89aa6b82c6cd?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.31.51 PM.jpeg",
                     "featured": false
                 },
                 {
@@ -34,7 +34,7 @@
                     "price": "300",
                     "description": "Scannable music code frame for your favorite song.",
                     "whatsappCode": "FRAME-SPOTIFY",
-                    "image": "https://images.unsplash.com/photo-1614620245376-782255866170?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.31.57 PM.jpeg",
                     "featured": true
                 },
                 {
@@ -43,7 +43,7 @@
                     "price": "900",
                     "description": "Hand-drawn pencil sketch effect in a sleek frame.",
                     "whatsappCode": "FRAME-PENCIL",
-                    "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.32.02 PM.jpeg",
                     "featured": true
                 },
                 {
@@ -52,7 +52,7 @@
                     "price": "350",
                     "description": "Personalized birth stats frame for your little one.",
                     "whatsappCode": "FRAME-BABY",
-                    "image": "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.32.07 PM.jpeg",
                     "featured": false
                 },
                 {
@@ -61,7 +61,7 @@
                     "price": "300",
                     "description": "Combine multiple memories in one beautiful collage frame.",
                     "whatsappCode": "FRAME-COLLAGE",
-                    "image": "https://images.unsplash.com/photo-1583096114844-065dc64366fa?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.32.14 PM.jpeg",
                     "featured": false
                 },
                 {
@@ -70,7 +70,7 @@
                     "price": "700",
                     "description": "Rustic wooden frame handmade with premium wood.",
                     "whatsappCode": "FRAME-WOODEN",
-                    "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.32.21 PM.jpeg",
                     "featured": false
                 },
                 {
@@ -79,7 +79,7 @@
                     "price": "As per requirement",
                     "description": "Fully customizable frame designed to your specifications.",
                     "whatsappCode": "FRAME-CUSTOM",
-                    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.32.31 PM.jpeg",
                     "featured": true
                 }
             ]
@@ -95,7 +95,7 @@
                     "price": " As per requirement",
                     "description": "Elegant see-through gift box with curated goodies.",
                     "whatsappCode": "HAMPER-TRANS",
-                    "image": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.33.51 PM.jpeg",
                     "featured": true
                 },
                 {
@@ -104,7 +104,7 @@
                     "price": "1500",
                     "description": "Unfolding photo box full of memories and messages.",
                     "whatsappCode": "HAMPER-EXPLOSION",
-                    "image": "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.35.54 PM.jpeg",
                     "featured": true
                 },
                 {
@@ -113,7 +113,7 @@
                     "price": "1300",
                     "description": "Loaded with assorted chocolates and treats.",
                     "whatsappCode": "HAMPER-CHOC",
-                    "image": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.36.21 PM.jpeg",
                     "featured": false
                 },
                 {
@@ -122,7 +122,7 @@
                     "price": "450",
                     "description": "Collection of handmade cards for every emotion.",
                     "whatsappCode": "HAMPER-CARDS",
-                    "image": "https://images.unsplash.com/photo-1607344645866-009c320b6310?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.37.04 PM.jpeg",
                     "featured": false
                 },
                 {
@@ -131,7 +131,7 @@
                     "price": "300",
                     "description": "Our signature mix of best-selling small gifts.",
                     "whatsappCode": "HAMPER-COMBO",
-                    "image": "https://images.unsplash.com/photo-1513885535751-8b9238cd48?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.37.16 PM.jpeg",
                     "featured": true
                 },
                 {
@@ -140,7 +140,7 @@
                     "price": " As per your requirement",
                     "description": "Beautiful box containing accessories and jewelry pieces.",
                     "whatsappCode": "HAMPER-JEWEL",
-                    "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.38.09 PM.jpeg",
                     "featured": false
                 },
                 {
@@ -149,7 +149,7 @@
                     "price": "400",
                     "description": "Box filled with memories printed in polaroid style.",
                     "whatsappCode": "HAMPER-POLAR",
-                    "image": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.38.36 PM.jpeg",
                     "featured": false
                 },
                 {
@@ -158,7 +158,7 @@
                     "price": " As per your requirement",
                     "description": "Relaxing spa and skincare essentials kit.",
                     "whatsappCode": "HAMPER-SKIN",
-                    "image": "https://images.unsplash.com/photo-1608248597279-f99d160bfbc8?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.39.02 PM.jpeg",
                     "featured": false
                 }
             ]
@@ -174,7 +174,7 @@
                     "price": "1300",
                     "description": "Fresh or artificial flower arrangement.",
                     "whatsappCode": "BOUQUET-FLOWER",
-                    "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.40.26 PM.jpeg",
                     "featured": true
                 },
                 {
@@ -183,7 +183,7 @@
                     "price": "450",
                     "description": "Unique bouquet crafted with currency notes.",
                     "whatsappCode": "BOUQUET-MONEY",
-                    "image": "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.40.50 PM.jpeg",
                     "featured": false
                 },
                 {
@@ -192,7 +192,7 @@
                     "price": "600",
                     "description": "Sweet bouquet made of assorted chocolates.",
                     "whatsappCode": "BOUQUET-CHOC",
-                    "image": "https://images.unsplash.com/photo-1575372579296-419b493122c3?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.41.21 PM.jpeg",
                     "featured": true
                 },
                 {
@@ -201,7 +201,7 @@
                     "price": " As per your requirement",
                     "description": "Creative bouquet incorporating jewelry items.",
                     "whatsappCode": "BOUQUET-JEWEL",
-                    "image": "https://images.unsplash.com/photo-1594227702657-37b036c7a72c?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.41.49 PM.jpeg",
                     "featured": false
                 },
                 {
@@ -210,7 +210,7 @@
                     "price": "600",
                     "description": "Cute bouquet made with various hair accessories.",
                     "whatsappCode": "BOUQUET-HAIR",
-                    "image": "https://images.unsplash.com/photo-1596464716127-f9a0859b4ae6?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.42.18 PM.jpeg",
                     "featured": false
                 },
                 {
@@ -219,7 +219,7 @@
                     "price": "500",
                     "description": "Bouquet arranging your favorite polaroid photos.",
                     "whatsappCode": "BOUQUET-POLAR",
-                    "image": "https://images.unsplash.com/photo-1603217039640-afa96f48d66e?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.43.07 PM.jpeg",
                     "featured": false
                 }
             ]
@@ -235,7 +235,7 @@
                     "price": "250 - 350",
                     "description": "Elegant trousseau packing for brides with custom trays.",
                     "whatsappCode": "PACK-TROUSSEAU",
-                    "image": "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.43.47 PM.jpeg",
                     "featured": true
                 },
                 {
@@ -244,7 +244,7 @@
                     "price": "1400",
                     "description": "Decorative handcrafted platter for engagement rings.",
                     "whatsappCode": "PACK-RING",
-                    "image": "https://images.unsplash.com/photo-1522673607200-1645062cd958?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.44.19 PM.jpeg",
                     "featured": false
                 },
                 {
@@ -253,7 +253,7 @@
                     "price": "450",
                     "description": "Set of 10 premium handmade shagun envelopes.",
                     "whatsappCode": "PACK-SHAGUN",
-                    "image": "https://images.unsplash.com/photo-1607344645866-009c320b6310?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.44.54 PM.jpeg",
                     "featured": false
                 },
                 {
@@ -262,7 +262,7 @@
                     "price": "450",
                     "description": "Decorative tray for gifting sarees and outfits.",
                     "whatsappCode": "PACK-SAREE",
-                    "image": "https://images.unsplash.com/photo-1610136649349-0f696502741a?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.45.17 PM.jpeg",
                     "featured": false
                 },
                 {
@@ -271,7 +271,7 @@
                     "price": "250",
                     "description": "Beautiful packaging for gold/silver coins.",
                     "whatsappCode": "PACK-GINNI",
-                    "image": "https://images.unsplash.com/photo-1621939514649-28b5fe2f88eb?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.46.04 PM.jpeg",
                     "featured": false
                 }
             ]
@@ -287,7 +287,7 @@
                     "price": "1200 - 1600",
                     "description": "Handmade scrapbook to celebrate birthdays.",
                     "whatsappCode": "SCRAP-BDAY",
-                    "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.46.44 PM.jpeg",
                     "featured": true
                 },
                 {
@@ -296,7 +296,7 @@
                     "price": "1200 - 1600",
                     "description": "Romantic scrapbook for Valentine's day.",
                     "whatsappCode": "SCRAP-VAL",
-                    "image": "https://images.unsplash.com/photo-1516726817505-f5ed8259b4fb?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.47.18 PM.jpeg",
                     "featured": false
                 },
                 {
@@ -305,7 +305,7 @@
                     "price": "1200 - 1600",
                     "description": "Capture your journey together in this book.",
                     "whatsappCode": "SCRAP-ANNI",
-                    "image": "https://images.unsplash.com/photo-1522444903332-9cb773b0a7db?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.47.46 PM.jpeg",
                     "featured": false
                 },
                 {
@@ -314,7 +314,7 @@
                     "price": "1200 - 1600",
                     "description": "General purpose scrapbook for all your memories.",
                     "whatsappCode": "SCRAP-MEM",
-                    "image": "https://images.unsplash.com/photo-1518331483807-f671ed196875?w=600&q=80",
+                    "image": "assets/img/products/WhatsApp Image 2025-12-04 at 4.48.09 PM.jpeg",
                     "featured": false
                 }
             ]
@@ -475,7 +475,6 @@
                 }
             ]
         }
-        
     ],
     "portfolio": [
         {
