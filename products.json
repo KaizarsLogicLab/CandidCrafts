@@ -11,40 +11,76 @@
             "icon": "fa-image",
             "products": [
                 {
-                    "id": "f1",
-                    "name": "Spotify Acrylic Frame",
+                    "id": "f_vintage",
+                    "name": "Vintage Frame",
+                    "price": "1800",
+                    "image": "https://images.unsplash.com/photo-1531844251246-9f10d93c6c10?w=600&q=80",
+                    "description": "Elegant vintage-style frame for timeless memories.",
+                    "whatsappCode": "FRAME-VINTAGE",
+                    "featured": false
+                },
+                {
+                    "id": "f_photo",
+                    "name": "Photo Frame",
+                    "price": "900",
+                    "image": "https://images.unsplash.com/photo-1544376798-89aa6b82c6cd?w=600&q=80",
+                    "description": "Classic photo frame suitable for any decor.",
+                    "whatsappCode": "FRAME-PHOTO",
+                    "featured": false
+                },
+                {
+                    "id": "f_spotify",
+                    "name": "Spotify Frame",
                     "price": "1200",
                     "image": "https://images.unsplash.com/photo-1614620245376-782255866170?w=600&q=80",
-                    "description": "6x9 inch transparent acrylic frame with scannable Spotify code and your photo.",
+                    "description": "Scannable music code frame for your favorite song.",
                     "whatsappCode": "FRAME-SPOTIFY",
                     "featured": true
                 },
                 {
-                    "id": "f2",
-                    "name": "Vintage Sketch Frame",
-                    "price": "1800",
+                    "id": "f_pencil",
+                    "name": "Pencil Sketch Frame",
+                    "price": "1600",
                     "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&q=80",
-                    "description": "A4 wooden frame with a handmade digital pencil sketch effect.",
-                    "whatsappCode": "FRAME-SKETCH",
-                    "featured": false
+                    "description": "Hand-drawn pencil sketch effect in a sleek frame.",
+                    "whatsappCode": "FRAME-PENCIL",
+                    "featured": true
                 },
                 {
-                    "id": "f3",
-                    "name": "Baby Birth Stats Frame",
+                    "id": "f_baby",
+                    "name": "Baby Born Frame",
                     "price": "1500",
                     "image": "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&q=80",
-                    "description": "Custom frame with baby's name, birth date, time, and weight. Perfect nursery decor.",
+                    "description": "Personalized birth stats frame for your little one.",
                     "whatsappCode": "FRAME-BABY",
                     "featured": false
                 },
                 {
-                    "id": "f4",
-                    "name": "Mosaic Photo Frame",
+                    "id": "f_collage",
+                    "name": "Collage Frame",
                     "price": "2200",
-                    "image": "https://images.unsplash.com/photo-1544376798-89aa6b82c6cd?w=600&q=80",
-                    "description": "A big picture made of hundreds of smaller mini-photos. Size 12x18 inches.",
-                    "whatsappCode": "FRAME-MOSAIC",
+                    "image": "https://images.unsplash.com/photo-1583096114844-065dc64366fa?w=600&q=80",
+                    "description": "Combine multiple memories in one beautiful collage frame.",
+                    "whatsappCode": "FRAME-COLLAGE",
                     "featured": false
+                },
+                {
+                    "id": "f_wooden",
+                    "name": "Wooden Frame",
+                    "price": "1400",
+                    "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&q=80",
+                    "description": "Rustic wooden frame handmade with premium wood.",
+                    "whatsappCode": "FRAME-WOODEN",
+                    "featured": false
+                },
+                {
+                    "id": "f_custom",
+                    "name": "Custom Frame",
+                    "price": "2000",
+                    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600&q=80",
+                    "description": "Fully customizable frame designed to your specifications.",
+                    "whatsappCode": "FRAME-CUSTOM",
+                    "featured": true
                 }
             ]
         },
@@ -54,39 +90,274 @@
             "icon": "fa-gift",
             "products": [
                 {
-                    "id": "h1",
-                    "name": "Luxury Chocolate Hamper",
-                    "price": "2500",
+                    "id": "h_trans",
+                    "name": "Transparent Box Hamper",
+                    "price": "1200",
                     "image": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=600&q=80",
-                    "description": "Premium basket with Ferrero Rocher, Lindt, scented candle, and a greeting card.",
-                    "whatsappCode": "HAMPER-CHOC",
+                    "description": "Elegant see-through gift box with curated goodies.",
+                    "whatsappCode": "HAMPER-TRANS",
                     "featured": true
                 },
                 {
-                    "id": "h2",
+                    "id": "h_exp",
                     "name": "Explosion Box",
                     "price": "999",
                     "image": "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?w=600&q=80",
-                    "description": "3-layer explosion box holding 20+ photos. Unfolds to reveal sweet messages.",
-                    "whatsappCode": "HAMPER-BOX",
+                    "description": "Unfolding photo box full of memories and messages.",
+                    "whatsappCode": "HAMPER-EXPLOSION",
                     "featured": true
                 },
                 {
-                    "id": "h3",
-                    "name": "Men's Classic Combo",
-                    "price": "1850",
-                    "image": "https://images.unsplash.com/photo-1607457757946-b60b4cb42767?w=600&q=80",
-                    "description": "Includes a personalized leather wallet, keychain, and eyewear case with name engraving.",
-                    "whatsappCode": "HAMPER-MENS",
+                    "id": "h_choc",
+                    "name": "Chocolate Hamper",
+                    "price": "1500",
+                    "image": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=600&q=80",
+                    "description": "Loaded with assorted chocolates and treats.",
+                    "whatsappCode": "HAMPER-CHOC",
                     "featured": false
                 },
                 {
-                    "id": "h4",
-                    "name": "Self-Care Spa Kit",
-                    "price": "3000",
+                    "id": "h_cards",
+                    "name": "Cards Hamper",
+                    "price": "999",
+                    "image": "https://images.unsplash.com/photo-1607344645866-009c320b6310?w=600&q=80",
+                    "description": "Collection of handmade cards for every emotion.",
+                    "whatsappCode": "HAMPER-CARDS",
+                    "featured": false
+                },
+                {
+                    "id": "h_combo",
+                    "name": "The Candid Combo",
+                    "price": "2500",
+                    "image": "https://images.unsplash.com/photo-1513885535751-8b9238cd48?w=600&q=80",
+                    "description": "Our signature mix of best-selling small gifts.",
+                    "whatsappCode": "HAMPER-COMBO",
+                    "featured": true
+                },
+                {
+                    "id": "h_jewel",
+                    "name": "Jewellery Hamper",
+                    "price": "2200",
+                    "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&q=80",
+                    "description": "Beautiful box containing accessories and jewelry pieces.",
+                    "whatsappCode": "HAMPER-JEWEL",
+                    "featured": false
+                },
+                {
+                    "id": "h_polar",
+                    "name": "Polaroid Hamper",
+                    "price": "1400",
+                    "image": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=600&q=80",
+                    "description": "Box filled with memories printed in polaroid style.",
+                    "whatsappCode": "HAMPER-POLAR",
+                    "featured": false
+                },
+                {
+                    "id": "h_skin",
+                    "name": "Skin Care Product Hamper",
+                    "price": "2800",
                     "image": "https://images.unsplash.com/photo-1608248597279-f99d160bfbc8?w=600&q=80",
-                    "description": "Relaxing kit with bath salts, organic soaps, face masks, and a silk eye mask.",
-                    "whatsappCode": "HAMPER-SPA",
+                    "description": "Relaxing spa and skincare essentials kit.",
+                    "whatsappCode": "HAMPER-SKIN",
+                    "featured": false
+                }
+            ]
+        },
+        {
+            "id": "bouquets",
+            "name": "Bouquets",
+            "icon": "fa-fan",
+            "products": [
+                {
+                    "id": "b_flower",
+                    "name": "Flower Bouquet",
+                    "price": "800",
+                    "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=600&q=80",
+                    "description": "Fresh or artificial flower arrangement.",
+                    "whatsappCode": "BOUQUET-FLOWER",
+                    "featured": true
+                },
+                {
+                    "id": "b_money",
+                    "name": "Money Bouquet",
+                    "price": "1500",
+                    "image": "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=600&q=80",
+                    "description": "Unique bouquet crafted with currency notes.",
+                    "whatsappCode": "BOUQUET-MONEY",
+                    "featured": false
+                },
+                {
+                    "id": "b_choc",
+                    "name": "Chocolate Bouquet",
+                    "price": "1200",
+                    "image": "https://images.unsplash.com/photo-1575372579296-419b493122c3?w=600&q=80",
+                    "description": "Sweet bouquet made of assorted chocolates.",
+                    "whatsappCode": "BOUQUET-CHOC",
+                    "featured": true
+                },
+                {
+                    "id": "b_jewel",
+                    "name": "Jewellery Bouquet",
+                    "price": "2000",
+                    "image": "https://images.unsplash.com/photo-1594227702657-37b036c7a72c?w=600&q=80",
+                    "description": "Creative bouquet incorporating jewelry items.",
+                    "whatsappCode": "BOUQUET-JEWEL",
+                    "featured": false
+                },
+                {
+                    "id": "b_hair",
+                    "name": "Hair Clip Bouquet",
+                    "price": "900",
+                    "image": "https://images.unsplash.com/photo-1596464716127-f9a0859b4ae6?w=600&q=80",
+                    "description": "Cute bouquet made with various hair accessories.",
+                    "whatsappCode": "BOUQUET-HAIR",
+                    "featured": false
+                },
+                {
+                    "id": "b_polar",
+                    "name": "Polaroid Bouquet",
+                    "price": "1100",
+                    "image": "https://images.unsplash.com/photo-1603217039640-afa96f48d66e?w=600&q=80",
+                    "description": "Bouquet arranging your favorite polaroid photos.",
+                    "whatsappCode": "BOUQUET-POLAR",
+                    "featured": false
+                }
+            ]
+        },
+        {
+            "id": "wedding_packing",
+            "name": "Wedding Gift Packing",
+            "icon": "fa-ribbon",
+            "products": [
+                {
+                    "id": "wp_trousseau",
+                    "name": "Trousseau Packing",
+                    "price": "2500",
+                    "image": "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=600&q=80",
+                    "description": "Elegant trousseau packing for brides with custom trays.",
+                    "whatsappCode": "PACK-TROUSSEAU",
+                    "featured": true
+                },
+                {
+                    "id": "wp_ring",
+                    "name": "Ring Platter",
+                    "price": "1200",
+                    "image": "https://images.unsplash.com/photo-1522673607200-1645062cd958?w=600&q=80",
+                    "description": "Decorative handcrafted platter for engagement rings.",
+                    "whatsappCode": "PACK-RING",
+                    "featured": false
+                },
+                {
+                    "id": "wp_shagun",
+                    "name": "Shagun Envelope Set",
+                    "price": "500",
+                    "image": "https://images.unsplash.com/photo-1607344645866-009c320b6310?w=600&q=80",
+                    "description": "Set of 10 premium handmade shagun envelopes.",
+                    "whatsappCode": "PACK-SHAGUN",
+                    "featured": false
+                },
+                {
+                    "id": "wp_saree",
+                    "name": "Saree Packing Tray",
+                    "price": "800",
+                    "image": "https://images.unsplash.com/photo-1610136649349-0f696502741a?w=600&q=80",
+                    "description": "Decorative tray for gifting sarees and outfits.",
+                    "whatsappCode": "PACK-SAREE",
+                    "featured": false
+                },
+                {
+                    "id": "wp_ginni",
+                    "name": "Coin Ginni Packing",
+                    "price": "300",
+                    "image": "https://images.unsplash.com/photo-1621939514649-28b5fe2f88eb?w=600&q=80",
+                    "description": "Beautiful packaging for gold/silver coins.",
+                    "whatsappCode": "PACK-GINNI",
+                    "featured": false
+                }
+            ]
+        },
+        {
+            "id": "scrapbook",
+            "name": "Scrap Books",
+            "icon": "fa-book-open",
+            "products": [
+                {
+                    "id": "s_bday",
+                    "name": "Birthday Scrap Book",
+                    "price": "1500",
+                    "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=600&q=80",
+                    "description": "Handmade scrapbook to celebrate birthdays.",
+                    "whatsappCode": "SCRAP-BDAY",
+                    "featured": true
+                },
+                {
+                    "id": "s_val",
+                    "name": "Valentine Day Scrap Book",
+                    "price": "1800",
+                    "image": "https://images.unsplash.com/photo-1516726817505-f5ed8259b4fb?w=600&q=80",
+                    "description": "Romantic scrapbook for Valentine's day.",
+                    "whatsappCode": "SCRAP-VAL",
+                    "featured": false
+                },
+                {
+                    "id": "s_anni",
+                    "name": "Anniversary Scrap Book",
+                    "price": "2000",
+                    "image": "https://images.unsplash.com/photo-1522444903332-9cb773b0a7db?w=600&q=80",
+                    "description": "Capture your journey together in this book.",
+                    "whatsappCode": "SCRAP-ANNI",
+                    "featured": false
+                },
+                {
+                    "id": "s_mem",
+                    "name": "Memories Scrap Book",
+                    "price": "1600",
+                    "image": "https://images.unsplash.com/photo-1518331483807-f671ed196875?w=600&q=80",
+                    "description": "General purpose scrapbook for all your memories.",
+                    "whatsappCode": "SCRAP-MEM",
+                    "featured": false
+                }
+            ]
+        },
+        {
+            "id": "hoopart",
+            "name": "Hoop Art",
+            "icon": "fa-circle-notch",
+            "products": [
+                {
+                    "id": "ha_mar",
+                    "name": "Marriage Hoop Art",
+                    "price": "1200",
+                    "image": "https://images.unsplash.com/photo-1534119428203-c32309eac74e?w=600&q=80",
+                    "description": "Embroidered hoop art celebrating marriage.",
+                    "whatsappCode": "HOOP-MAR",
+                    "featured": true
+                },
+                {
+                    "id": "ha_bday",
+                    "name": "Birthday Hoop Art",
+                    "price": "1000",
+                    "image": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&q=80",
+                    "description": "Custom hoop art for birthdays.",
+                    "whatsappCode": "HOOP-BDAY",
+                    "featured": false
+                },
+                {
+                    "id": "ha_eng",
+                    "name": "Engagement Hoop Art",
+                    "price": "1100",
+                    "image": "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=600&q=80",
+                    "description": "Commemorate your engagement with this hoop.",
+                    "whatsappCode": "HOOP-ENG",
+                    "featured": false
+                },
+                {
+                    "id": "ha_cust",
+                    "name": "Customized Hoop Art",
+                    "price": "1300",
+                    "image": "https://images.unsplash.com/photo-1456315277960-9118020c7e2c?w=600&q=80",
+                    "description": "Fully customizable embroidery hoop art.",
+                    "whatsappCode": "HOOP-CUST",
                     "featured": false
                 }
             ]
@@ -97,30 +368,84 @@
             "icon": "fa-wand-magic-sparkles",
             "products": [
                 {
-                    "id": "r1",
-                    "name": "Ocean Resin Clock",
-                    "price": "3200",
-                    "image": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=600&q=80",
-                    "description": "12-inch round wall clock made with real sand and multi-layer resin ocean waves.",
-                    "whatsappCode": "RESIN-CLOCK",
+                    "id": "r_keychain",
+                    "name": "Resin Keychain",
+                    "price": "300",
+                    "image": "https://images.unsplash.com/photo-1615457938971-6334547225c5?w=600&q=80",
+                    "description": "Custom initial keychain with real dried flowers.",
+                    "whatsappCode": "RESIN-KEYCHAIN",
                     "featured": true
                 },
                 {
-                    "id": "r2",
-                    "name": "Floral Alphabet Keychain",
-                    "price": "450",
-                    "image": "https://images.unsplash.com/photo-1615457938971-6334547225c5?w=600&q=80",
-                    "description": "Your initial letter preserved with real dried flowers and gold flakes.",
-                    "whatsappCode": "RESIN-KEYCHAIN",
+                    "id": "r_bday",
+                    "name": "Birthday Frame",
+                    "price": "1500",
+                    "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&q=80",
+                    "description": "Resin frame customized for birthdays.",
+                    "whatsappCode": "RESIN-BDAY",
                     "featured": false
                 },
                 {
-                    "id": "r3",
-                    "name": "Geode Coaster Set (4pcs)",
-                    "price": "1200",
+                    "id": "r_flower",
+                    "name": "Flower Preservation",
+                    "price": "2000",
                     "image": "https://images.unsplash.com/photo-1615457938996-b3335759fa7d?w=600&q=80",
-                    "description": "Luxury agate-style resin coasters with gold edges. Heat resistant.",
-                    "whatsappCode": "RESIN-COASTERS",
+                    "description": "Preserve your special flowers in crystal clear resin.",
+                    "whatsappCode": "RESIN-FLOWER",
+                    "featured": true
+                },
+                {
+                    "id": "r_varmala",
+                    "name": "Varmala Preservation",
+                    "price": "3500",
+                    "image": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=600&q=80",
+                    "description": "Wedding garland preservation in resin block or clock.",
+                    "whatsappCode": "RESIN-VARMALA",
+                    "featured": true
+                },
+                {
+                    "id": "r_name",
+                    "name": "Resin Name Plate",
+                    "price": "1800",
+                    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600&q=80",
+                    "description": "Beautiful resin name plate for your home entrance.",
+                    "whatsappCode": "RESIN-NAME",
+                    "featured": false
+                },
+                {
+                    "id": "r_card",
+                    "name": "Resin Marriage Card",
+                    "price": "1200",
+                    "image": "https://images.unsplash.com/photo-1529636798458-92189330750c?w=600&q=80",
+                    "description": "Unique marriage invitation preserved in resin.",
+                    "whatsappCode": "RESIN-CARD",
+                    "featured": false
+                },
+                {
+                    "id": "r_frame",
+                    "name": "Resin Frame",
+                    "price": "1500",
+                    "image": "https://images.unsplash.com/photo-1544376798-89aa6b82c6cd?w=600&q=80",
+                    "description": "Photo frame with resin art borders.",
+                    "whatsappCode": "RESIN-FRAME",
+                    "featured": false
+                },
+                {
+                    "id": "r_watch",
+                    "name": "Resin Watch",
+                    "price": "2500",
+                    "image": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=600&q=80",
+                    "description": "Wall clock or timepiece with resin art dial.",
+                    "whatsappCode": "RESIN-WATCH",
+                    "featured": false
+                },
+                {
+                    "id": "r_cust",
+                    "name": "Resin Customized Frame",
+                    "price": "2000",
+                    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600&q=80",
+                    "description": "Fully customized resin art frame.",
+                    "whatsappCode": "RESIN-CUST",
                     "featured": false
                 }
             ]
